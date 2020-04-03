@@ -3,5 +3,4 @@
 #   - openjdk
 #   - openjdk6
 #   - openjdk8
-__java_packages:
-  - "openjdk{{ java.version }}"
+__java_packages: "openjdk{{ java.redhat_version }}"
