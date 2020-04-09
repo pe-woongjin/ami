@@ -11,7 +11,5 @@ node {
   }
 }
 parameters {
-  string(name: 'branch', defaultValue: 'develop', description: '디플로이할 대상 브랜치를 입력하세요.')
-  #choice(name: 'OS_Type', choices: ['awslinux2', 'ubuntu'], description: 'OS를 선택하세요.')
-  #choice(name: 'Target_Image', choices: ['gitlab', 'jenkins', 'sonarqube'], description: 'AMI를 만들 대상을 선택하세요.')
+  string(name: 'branch', defaultValue: 'develop', description: '디플로이할 대상 브랜치를 입력하세요.')  
 }
