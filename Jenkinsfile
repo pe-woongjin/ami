@@ -2,10 +2,10 @@ node {
   stage('Git clone') {
     git(url: 'https://github.com/pe-woongjin/ami.git', branch: "${branch}", changelog: true)
   }
-  dir ("packer/build_${OS_Type}") { 
+  dir ("packer") { 
     stage ('packer') {
       sh '''
-      /opt/packer/packer build ./${Target_Image}-ami.json
+      /opt/packer/packer build ./default.json
       '''
     }
   }
